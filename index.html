@@ -167,41 +167,7 @@
 
 
         </div>
-         <main>
-        <section class="welcome">
-            <h1>Welcome to MockTest Website</h1>
-            <p>Prepare for your exams with our comprehensive mock tests and study materials.</p>
-            <a href="#" class="cta-button">Get Started</a>
-        </section>
 
-        <section class="featured-courses">
-            <h2>Featured Courses</h2>
-            <!-- Add course cards or content here -->
-        </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <a href="#">MockTest</a>
-            </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-social">
-            <ul>
-                <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
-                <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
-                <li><a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a></li>
-            </ul>
-        </div>
-    </footer>
 
     </section>
     <script type="text/javascript">
@@ -340,6 +306,68 @@ span.psw {
      width: 100%;
   }
 }
+footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-social ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-social li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .footer-social a {
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .footer-social a:before {
+            content: "\f09a"; /* Unicode for the FontAwesome Facebook icon */
+            font-family: FontAwesome;
+            margin-right: 5px;
+        }
+
+        .footer-social a:hover {
+            color: #3b5998; /* Facebook color */
+        }
+
+        .footer-social a:hover:before {
+            content: "\f099"; /* Unicode for the FontAwesome Facebook icon on hover */
+        }
 </style>
 </head>
 <body>
@@ -432,7 +460,48 @@ img.avatar {
 .container {
   padding: 8px;
 }
+body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+        }
 
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        /* Media query for responsive design */
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 14px;
+                line-height: 1.4;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+                margin-top: 20px;
+                margin-bottom: 15px;
+            }
+        }
 span.psw {
   float: right;
   padding-top: -5px;
@@ -476,7 +545,86 @@ span.psw {
   -webkit-animation: animatezoom 0.6s;
   animation: animatezoom 0.6s
 }
+p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
 
+        /* Styles for the footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 0; /* Adjust the padding to enlarge the footer vertically */
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+            gap: 20px; /* Adjust the gap between images */
+        }
+
+        .image {
+            width: 100%; /* Set a uniform width for all images */
+            height: auto; /* Maintain aspect ratio */
+            border: 2px solid #ccc; /* Add a border around images */
+            border-radius: 8px; /* Add rounded corners */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+        }
+        .footer-social ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-social li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .footer-social a {
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .footer-social a:before {
+            content: "\f09a"; /* Unicode for the FontAwesome Facebook icon */
+            font-family: FontAwesome;
+            margin-right: 5px;
+        }
+
+        .footer-social a:hover {
+            color: #3b5998; /* Facebook color */
+        }
+
+        .footer-social a:hover:before {
+            content: "\f099"; /* Unicode for the FontAwesome Facebook icon on hover */
+        }
 @-webkit-keyframes animatezoom {
   from {-webkit-transform: scale(0)} 
   to {-webkit-transform: scale(1)}
@@ -545,7 +693,73 @@ window.onclick = function(event) {
     }
 }
 </script>
+<main>
+    <h1>Welcome to Our Knowledge Hub</h1>
+    <div class="image-container">
+        <img class="image" src="https://th.bing.com/th/id/OIP.rTb34M-8UDL1cP8b5_dkdAAAAA?pid=ImgDet&w=196&h=102&c=7&dpr=1.5" alt="MockTest Image 12">
     
+        <img class="image" src="https://th.bing.com/th?id=OIP.7HS21FZBu3Wk3Rd-nj76RwHaE7&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="MockTest Image 1">
+        <img class="image" src="https://th.bing.com/th/id/OIP.rTb34M-8UDL1cP8b5_dkdAAAAA?pid=ImgDet&w=196&h=102&c=7&dpr=1.5" alt="MockTest Image 12">
+    </div>
+    
+    <p>Our Knowledge Hub is your gateway to a world of information and learning. We believe that knowledge is power, and we're here to empower you with an extensive collection of insightful articles, educational resources, and expert insights. Whether you're a student, a professional, or a lifelong learner, you'll find valuable content that ignites your curiosity and fuels your desire to grow.</p>
+    
+    <h2>Our Commitment to Excellence</h2>
+    
+    <p>At Our Knowledge Hub, we are dedicated to delivering accurate, reliable, and thought-provoking content. Our team of passionate writers and subject matter experts curate articles and resources on a wide range of topics, including science, technology, arts, literature, history, and more. We strive for excellence in every piece we produce, ensuring that you receive content that is informative, engaging, and meaningful.</p>
+    
+    <p>Whether you're looking to expand your knowledge on a specific subject, stay updated with the latest trends, or simply enjoy a good read, Our Knowledge Hub has something for everyone. From in-depth research articles to practical how-to guides, we aim to provide content that adds value to your life and broadens your horizons.</p>
+    
+    <div class="image-container">
+        <img class="image" src="https://th.bing.com/th?id=OIP.URReaggj7YTVKj1Ymb4JrwHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="MockTest Image 2">
+        <img class="image" src="https://th.bing.com/th?id=OIP.l0xglJTD3DrFh9AE82EtawHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="MockTest Image 3">
+        <img class="image" src="https://th.bing.com/th?id=OIP.v2qYhPg_uo4LmK5QuueMDwAAAA&w=218&h=145&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="MockTest Image 4">
+    </div>
+    <h2>Our Vision for Learning</h2>
+    
+    <p>We envision a world where learning knows no boundaries. That's why we offer our content free of charge to anyone seeking to learn and grow. We believe that access to knowledge should be inclusive and readily available to all, regardless of geographical location or financial status.</p>
+    
+    <p>Our user-friendly website is designed to provide a seamless browsing experience on both desktop and mobile devices. We understand the importance of responsive design, ensuring that you can access our content anytime, anywhere.</p>
+    <div class="image-container">
+        
+        <img class="image" src="https://www.practicemock.com/blog/wp-content/uploads/2022/08/Info_Mock_Tests_051021-1-1-1170x1170-1.jpg" alt="MockTest Image 9">
+        <img class="image" src="https://th.bing.com/th/id/OIP.3sUX5HNu_0shro9WzBFCLQHaHa?pid=ImgDet&w=1024&h=1024&rs=1" alt="MockTest Image 10">
+        <img class="image" src="https://th.bing.com/th/id/OIP.xl7l3rWw_pWfZjL0DsRjNwHaEW?pid=ImgDet&rs=1" alt="MockTest Image 11">
+    </div>
+    
+    <p>Thank you for choosing Our Knowledge Hub as your source of information and inspiration. We invite you to explore our vast collection of articles, engage in meaningful discussions, and embark on a journey of lifelong learning with us. Together, we can unlock the endless possibilities that knowledge brings.</p>
+    <div class="image-container">
+        <img class="image" src="https://th.bing.com/th/id/OIP.Bzlpc6y6hhQMjpgfq0B-PgHaEH?w=262&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="MockTest Image 5">
+        <img class="image" src="https://th.bing.com/th/id/OIP.baCqH9R7dv0JS4UagPrkngHaEK?w=333&h=187&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="MockTest Image 6">
+        <img class="image" src="https://th.bing.com/th/id/OIP.PETGbDUGUkm7xyuYa7SsBQHaDz?w=314&h=179&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="MockTest Image 7">
+    </div>
+    
+    <!-- Add more paragraphs and content here to reach your desired word count -->
+    
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <a href="#">MockTest</a>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-social">
+        <ul>
+            <li><a href="#"><i class="material-icons">facebook</i></a></li>
+            <li><a href="#"><i class="material-icons">twitter</i></a></li>
+            <li><a href="#"><i class="material-icons">linkedin</i></a></li>
+        </ul>
+    </div>
+</footer>
     </header>
 </body>
 
